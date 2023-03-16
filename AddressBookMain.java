@@ -9,7 +9,7 @@ public class AddressBookMain {
         int count=0;
         while(true) {
         System.out.println("What you want to perforem");
-        System.out.println("1) add contact \n 2) add new address book\n3 exit 4) print from address book 1 5");
+        System.out.println("1) add contact \n 2) add new address book\n3 exit 4) print from address book 1 5 print for address book 2");
         Scanner sc = new Scanner(System.in);
         int choice=sc.nextInt();
             switch (choice) {
