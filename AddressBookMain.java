@@ -5,6 +5,7 @@ public class AddressBookMain {
         AddressBook addressBook = new AddressBook();
         AddressBook addressBook2 = new AddressBook();
         AddressBook[] Address = new AddressBook[10];
+        int count=0;
         while(true) {
         System.out.println("What you want to perforem");
         System.out.println("1) add contact \n 2) add new address book\n3 exit ");
@@ -12,11 +13,10 @@ public class AddressBookMain {
         int choice=sc.nextInt();
             switch (choice) {
                 case 1 -> {
+                    count++;
                     addressBook.addContact();
                     System.out.println(addressBook);
-                    for(int i=0;i<Address.length;i++) {
-                        Address[0] = addressBook;
-                    }
+                        Address[count] = addressBook;
                 }
                 case 2 -> {
                     addressBook2.addContact();
